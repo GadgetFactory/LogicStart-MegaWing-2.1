@@ -1,0 +1,38 @@
+This test sketch works with the switches, joystick, 7 segment display and the RGB LED.
+
+The three leftmost switches (SW 7 through 5) set the test mode as follows:
+
+000: RGB LED mode
+001: Animation on 7-segment display
+010: Navigation mode with joystick
+
+RGB LED mode:
+============
+
+Switches 2, 1 and 0 are used to switch the RED, GREEN and BLUE LEDs respectively.
+
+Set switches 0 through 2 to top (high) position and set mode to RGB LED.
+
+Using switches 2/1/0 to switch the red/green/blue LEDs 8 different colours can be generated. By adding a software/hardware PWM support larger colour range can be generated.
+
+Animation mode:
+==============
+
+Switches 0 through 4 control the animation sequence. There are 6 sequences defined:
+
+1. Flashing 'Helo'
+2. Horizontal Line rolling vertically
+3. Clock with flashing colon (set to 10:25)
+4. Temparature display flipping between °C and °F (fake value, not read from any sensor)
+5. Bouncing sprites
+6. Bouncing ball that goes from left to right
+
+Set mode to Animation and then set a number corresponding to animation. Any number greater than 6 is ignored and current selection is retained.
+
+Navigation mode:
+===============
+
+The joystick buttons are read and their direction displayed on the 7-segment display. To read the joystick switches 0 through 4 must be set to HIGH before selecting this mode.
+
+The 7-segment display shows 'Up', 'Down', 'Left', 'Right' or 'Sel' as the joystick is operated.
+
