@@ -23,11 +23,11 @@ Switches 0 through 4 control the animation sequence. There are 6 sequences defin
 1. Flashing 'Helo'
 2. Horizontal Line rolling vertically
 3. Clock with flashing colon (set to 10:25)
-4. Temparature display flipping between °C and °F (fake value, not read from any sensor)
+4. Temparature display flipping between ï¿½C and ï¿½F (fake value, not read from any sensor)
 5. Bouncing sprites
 6. Bouncing ball that goes from left to right
 
-Set mode to Animation and then set a number corresponding to animation. Any number greater than 6 is ignored and current selection is retained.
+Set mode to Animation and then set a number corresponding to animation. Any number greater than 6 is ignored and previous selection is retained.
 
 Navigation mode:
 ===============
