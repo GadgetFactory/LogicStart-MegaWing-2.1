@@ -6,8 +6,20 @@ The three leftmost switches (SW 7 through 5) set the test mode as follows:
 001: Animation on 7-segment display
 010: Navigation mode with joystick
 
+The switch positions for each mode are represented as follows:
+v: Down (logic 0)
+^: Up (logic 1)
+X: Don't care (could be either V or ^)
+
+
+
 RGB LED mode:
 ============
+
+Switch positions to start:
+-------------------------
+76543210
+vvvXX^^^
 
 Switches 2, 1 and 0 are used to switch the RED, GREEN and BLUE LEDs respectively.
 
@@ -17,6 +29,11 @@ Using switches 2/1/0 to switch the red/green/blue LEDs 8 different colours can b
 
 Animation mode:
 ==============
+
+Switch positions to start:
+-------------------------
+76543210
+vv^XXvvv
 
 Switches 0 through 4 control the animation sequence. There are 6 sequences defined:
 
@@ -31,6 +48,11 @@ Set mode to Animation and then set a number corresponding to animation. Any numb
 
 Navigation mode:
 ===============
+
+Switch positions to start:
+-------------------------
+76543210
+v^v^^^^^
 
 The joystick buttons are read and their direction displayed on the 7-segment display. To read the joystick switches 0 through 4 must be set to HIGH before selecting this mode.
 
